@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+    *{
+    margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        overflow: hidden;
+    }
+    .logo{
+        display: flex;
+        margin-left: 5%;
+        transition: color 1s ease-in;
+    }
+    .logo:hover{
+        color:lightblue;
+    }
+    .head{
+        border: 1px solid white;
+        background-color: lightseagreen;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        border: none;
+        height: 4vh;
+    }
+    .section1{
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(127, 238, 238);
+        align-items: center;
+        height: 50vh;
+        transition: background-color 1s ease;
+    }
+    .section1:hover{
+        background-color: lightblue;
+    }
+   
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 70px;
+        margin-right: 100px;
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        transition: color 0.5 ease;
+    }
+    a:hover{
+        color: lightblue;
+        
+    }
+
+    .btn{
+        background-color: lightseagreen;
+        color:black;
+        box-shadow: 2px 2px 10px lightblue;
+        transition: all 0.5s ease-out;
+    }
+    .btn:hover{
+        transform: translateY(-10px);
+        box-shadow: 2px 2px 10px lightblue;
+    }
+    .html{
+        border: 1px solid white;
+        box-shadow: 1px 1px 6px lightblue;
+        width: 12%; 
+        height: 55%;
+        border-radius: 10px;
+        text-align: center;
+        padding: 30px;
+        margin-left: 20%;
+    }
+    .css{
+        border: 1px solid white;
+        box-shadow: 1px 1px 6px lightblue;
+        width: 12%;
+        height: 50%;
+        border-radius: 10px;
+        text-align: center;
+        padding: 30px;
+    }
+    .js{
+        border: 1px solid white;
+        box-shadow: 1px 1px 6px lightblue;
+        width: 12%;
+        height: 50%;
+        border-radius: 10px;
+        text-align: center;
+        padding: 30px;
+        margin-right: 20%;
+    }
+    .course{
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(127, 238, 238);
+        height: 30vh;
+    }
+    .html h3,.css h3,.js h3{
+         color:lightseagreen;  
+    }
+    footer{
+        background-color:lightseagreen ;
+        height: 5vh;
+        padding: 15px 50px;
+        color: white;
+        text-align: center;
+       transition: background-color 1s ease-in-out;
+    }
+    footer p{
+        transition: color 1s ease-in-out;
+    }
+    footer p:hover{
+        transform: scale(1.1);
+    }
+    footer:hover{
+        background-color: lightblue;
+    }
+        .html, .css, .js {
+            background-color:white;
+            transition: all 0.5s ease;
+    }
+    .html:hover {
+        transform: translateY(-10px);
+        
+        background-color:  lightblue;
+        box-shadow: 2px 5px 15px lightblue;
+    }
+    .css:hover {
+        transform: translateY(-10px);
+        background-color: lightblue;
+        box-shadow: 2px 5px 15px lightblue;
+    }
+    .js:hover {
+        transform: translateY(-10px);
+        background-color: lightblue;
+        box-shadow: 2px 5px 15px lightblue;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="head">
+            <div class="logo">
+                <h2>Best Course</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#other">Other</a></li>
+                    <li><a href="#template">Template</a></li>
+                    <li>Buy template</li>
+                    <li><input class="btn" type="button" value="Cart"></input></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="section1">
+            <nav>
+                <h1>Unlock skills.<br>Create new life</h1>
+                <h5>Good luck on your journey!<br>
+                Course from the experts!<br>
+                Learn with confidence!</h5>
+                <input class="btn" type="button" value="Enroll Now"></input>
+            </nav>
+            <nav>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmwuX4cs4W51L-rNvUWIqMe__vIOtGMGvWBfM7_foNTw&s=10" alt="hero image" width="290px" height="300px">
+            </nav>
+        </section>
+            <div class="course">
+            <div class="html">
+                <h3>HTML</h3>
+                <br>
+                <P>Build the structure of a website.</P>
+            </div>
+            <div class="css">
+                <h3>CSS</h3>
+                <br>
+                <p>Makes your websites beautiful.</p>
+            </div>
+            <div class="js">
+                <h3>JavaScript</h3>
+                <br>
+                <p>Makes your websites interactives.</p>
+            </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 Creative Spaces | Learn Something Now</p>
+        </footer>
+    </div>
+</body>
+</html>
+
